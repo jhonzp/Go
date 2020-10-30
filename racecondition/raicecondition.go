@@ -38,7 +38,7 @@ func main() {
 	fmt.Println(counter)
 }
 
-//run this faile with next command
+//run this file with next command
 //go run -race  .\racecondition\raicecondition.go
 //-race allow detect race condition
 //Found 3 data race(s)

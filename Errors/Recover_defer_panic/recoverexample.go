@@ -8,7 +8,7 @@ import "fmt"
 // 	fmt.Println("Returned normally from f.")
 // }
 
-//Esta función presenta el funcionamiento de recover, defer y panic
+// First Esta función presenta el funcionamiento de recover, defer y panic
 func First() {
 	//Esta función literal se ejecuta al final
 	defer func() {
@@ -22,7 +22,7 @@ func First() {
 	fmt.Println("Returned normally from g.")
 }
 
-//funcion de test
+// Gotest funcion de test
 func Gotest(i int) {
 	if i > 3 {
 		fmt.Println("Panicking!")

@@ -9,7 +9,7 @@ import "fmt"
 // }
 
 //Esta función presenta el funcionamiento de recover, defer y panic
-func first() {
+func First() {
 	//Esta función literal se ejecuta al final
 	defer func() {
 		//Cuando se lanza el Panic es capturado por recover (los defer se continuan ejecutando)

@@ -18,12 +18,12 @@ func first() {
 		}
 	}()
 	fmt.Println("Calling g.")
-	gotest(0)
+	Gotest(0)
 	fmt.Println("Returned normally from g.")
 }
 
 //funcion de test
-func gotest(i int) {
+func Gotest(i int) {
 	if i > 3 {
 		fmt.Println("Panicking!")
 		//El valor de i es recuperado en el recover (los defer se siguen ejecutando)
@@ -33,5 +33,5 @@ func gotest(i int) {
 	defer fmt.Println("Defer in g", i)
 	fmt.Println("Printing in g", i)
 	//llamado recursivo
-	gotest(i + 1)
+	Gotest(i + 1)
 }
